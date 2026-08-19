@@ -17,15 +17,15 @@ To wrap a U-Boot header around the boot.txt network script (allowing U-Boot use 
 
  If a DHCP, TFTP, and Web server are not already configured, one may run:
 
- ./RISC-V/server/python dhcp.py
+ .\RISC-V\server\python dhcp.py
  
- ./RISC-V/server/python tftp.py
+ .\RISC-V\server\python tftp.py
  
- ./RISC-V/server/python web.py
+ .\RISC-V\server\python web.py
 
  To boot the image from the network, run:
 
- ./RISC-V/networkBoot.bat
+ .\RISC-V\networkBoot.bat
 
  To convert the device tree to JSON:
 
