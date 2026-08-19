@@ -1,0 +1,5 @@
+echo "=== Executing Automated Network Boot Script ==="
+tftp ${kernel_addr_r} Image
+tftp ${fdt_addr_r} uboot.dtb
+setenv bootargs "root=/dev/nfs rw console=ttyS0 earlycon=sbi"
+booti ${kernel_addr_r} - ${fdt_addr_r}
