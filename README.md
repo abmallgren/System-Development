@@ -8,6 +8,7 @@ Download and install https://openvpn.net/client/
 Run this in PowerShell:
 
 Get-NetAdapter | Where-Object {$_.InterfaceDescription -like "*TAP*"} #Take note of the adapter name
+
 Rename-NetAdapter -Name "TAP-Windows Adapter V9" -NewName "tap0" #Make sure the TAP-Windows Adapter V9 portion matches the return value from above
 
 To wrap a U-Boot header around the boot.txt network script (allowing U-Boot use of the network script):
